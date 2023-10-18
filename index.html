@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Print Numbers to Infinity</title>
+  </head>
+  <body>
+    <p id="number"></p>
+
+    <script>
+      let numberElement = document.getElementById("number");
+      let count = 0;
+
+      function printNumber() {
+        numberElement.innerText = count;
+        count++;
+      }
+
+      // Create an infinite loop using a while loop
+      while (true) {
+        printNumber();
+      }
+    </script>
+  </body>
+</html>
